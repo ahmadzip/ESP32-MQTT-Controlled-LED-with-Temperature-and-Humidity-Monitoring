@@ -1,0 +1,13 @@
+## Ini petunjuk untuk menjalankan simulasi nya
+
+Jangan lupa di-build dulu yaaa :) pakai perintah:
+
+```
+pio run
+```
+
+Setelah itu, tekan `CTRL+SHIFT+P`, lalu pilih:
+
+```
+WOKWI: Start Simulator
+```
