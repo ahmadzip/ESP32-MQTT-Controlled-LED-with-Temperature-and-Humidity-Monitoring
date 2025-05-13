@@ -1,0 +1,116 @@
+{
+    "version": 1,
+    "author": "Manzip",
+    "editor": "wokwi",
+    "parts": [
+        {
+            "type": "wokwi-esp32-devkit-v1",
+            "id": "esp",
+            "top": -91.3,
+            "left": 81.4,
+            "attrs": {}
+        },
+        {
+            "type": "wokwi-led",
+            "id": "led1",
+            "top": -61.2,
+            "left": 32.6,
+            "attrs": {
+                "color": "red"
+            }
+        },
+        {
+            "type": "wokwi-dht22",
+            "id": "dht1",
+            "top": -95.7,
+            "left": 196.2,
+            "attrs": {}
+        }
+    ],
+    "connections": [
+        [
+            "esp:TX0",
+            "$serialMonitor:RX",
+            "",
+            []
+        ],
+        [
+            "esp:RX0",
+            "$serialMonitor:TX",
+            "",
+            []
+        ],
+        [
+            "r3:1",
+            "led4:A",
+            "green",
+            [
+                "v0"
+            ]
+        ],
+        [
+            "led4:C",
+            "esp:GND.1",
+            "green",
+            [
+                "v138.64",
+                "h-88.39",
+                "v102.35",
+                "h600.84",
+                "v-182.05"
+            ]
+        ],
+        [
+            "r3:2",
+            "esp:D2",
+            "green",
+            [
+                "v99.14",
+                "h278.51",
+                "v-37.5"
+            ]
+        ],
+        [
+            "led1:A",
+            "esp:D26",
+            "red",
+            [
+                "v0"
+            ]
+        ],
+        [
+            "esp:3V3",
+            "dht1:VCC",
+            "green",
+            [
+                "h28.5",
+                "v-48"
+            ]
+        ],
+        [
+            "esp:D15",
+            "dht1:SDA",
+            "gold",
+            [
+                "h0"
+            ]
+        ],
+        [
+            "esp:GND.1",
+            "dht1:GND",
+            "black",
+            [
+                "h0"
+            ]
+        ],
+        [
+            "led1:C",
+            "esp:GND.2",
+            "green",
+            [
+                "v0"
+            ]
+        ]
+    ],
+    "dependencies": {}
+}
